@@ -7,6 +7,10 @@ The Eternl DApp Store is the first comfort feature for users, that we will monet
 + favorite dApps in one place
 + optional feature (can use browser extension instead)
 
+### Advantage for dApp
+
++ higher volume through mobile traffic
+
 ### User Fee for Comfort Feature
 
 + 0.1% or 1 ADA (whichever is higher) on every buy order/swap >= 100 ADA.
@@ -40,11 +44,6 @@ The Eternl DApp Store is the first comfort feature for users, that we will monet
     + **4875 ADA** - for the seller
     + **125 ADA** - for the marketplace
     + _5 ADA_ - for Eternl
-
-#### Advantage for dApp
-
-+ higher volume through mobile traffic
-+ literally no risks involved
 
 #### Easy Implementation
 

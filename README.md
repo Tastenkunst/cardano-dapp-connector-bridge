@@ -93,6 +93,9 @@ Remove:
 X-Frame-Options
 ```
 
+What frame-ancestors do?
+```
 https://staging.eternl.io/ https://eternl.io/ -- page loadable on eternl pages.  
 ionic: capacitor: chrome-extension: -- page loadable in apps.  
 http://localhost:*/ https://localhost:*/ -- page loadable in development environments.  
+```
