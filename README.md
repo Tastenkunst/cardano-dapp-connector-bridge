@@ -73,7 +73,7 @@ var bridgeFullApi = {
   }
 }
 ```
-The API objects will be automatically recreated on the dApp side using postMessage calls.
+The API objects will be automatically recreated on the dApp side using postMessage calls.  
 See cardano-dapp-connector-bridge-init-wallet.js for more hints on how to implement it.
 
 ### Response headers
@@ -93,6 +93,6 @@ Remove:
 X-Frame-Options
 ```
 
-https://staging.eternl.io/ https://eternl.io/ -- page loadable on eternl pages.
-ionic: capacitor: chrome-extension: -- page loadable in apps.
-http://localhost:*/ https://localhost:*/ -- page loadable in development environments.
+https://staging.eternl.io/ https://eternl.io/ -- page loadable on eternl pages.  
+ionic: capacitor: chrome-extension: -- page loadable in apps.  
+http://localhost:*/ https://localhost:*/ -- page loadable in development environments.  
