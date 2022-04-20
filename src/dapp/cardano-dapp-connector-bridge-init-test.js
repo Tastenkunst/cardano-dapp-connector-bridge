@@ -33,6 +33,10 @@ initCardanoDAppConnectorBridge(async (walletApi) => {
 
     var fullApi               = await walletApi.enable() // walletApi is window.cardano.eternl
     var changeAddr            = null
+    var feeAddr               = walletApi.experimental?.feeAddress ?? null // address for Eternl DApp Browser
+
+    addText('DApp: feeAddr: '+feeAddr)
+    console.log('DApp: feeAddr:', feeAddr)
 
     if(fullApi) {
 

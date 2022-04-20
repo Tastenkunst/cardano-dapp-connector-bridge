@@ -1,5 +1,5 @@
-## Integration into the Eternl DApp Store.
-The Eternl DApp Store is the first comfort feature for users, that we will monetize.
+## Integration into the Eternl DApp Browser.
+The Eternl DApp Browser is the first comfort feature for users, that we will monetize.
 
 ### Advantage for the User
 
@@ -35,7 +35,7 @@ The Eternl DApp Store is the first comfort feature for users, that we will monet
     + **4875 ADA** - for the seller
     + **125 ADA** - for the marketplace
 
-#### DApp Store, comfort fee paid by user:
+#### DApp Browser, comfort fee paid by user:
 
 + **5000 ADA** - buy order for NFT
 + **125 ADA** - marketplace fee 2.5%
@@ -50,8 +50,8 @@ The Eternl DApp Store is the first comfort feature for users, that we will monet
 + Add an additional output to the BUY transactions
 
 For dApps there are no downsides to this concept. The fee can be clearly communicated to be an addition for using the
-Eternl DApp Store. Users are free to use the browser extension instead, if they want to avoid the comfort fee.
+Eternl DApp Browser. Users are free to use the browser extension instead, if they want to avoid the comfort fee.
 
 DApps will see increased volume due to mobile traffic. Of course it's also completely optional for dApps to join the
-Eternl DApp Store.
+Eternl DApp Browser.
 
