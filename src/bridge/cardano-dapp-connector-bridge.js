@@ -1,10 +1,3 @@
-// cardano-dapp-connector-bridge
-//
-// verison:                   v1.0.0
-// date:                      19th April 2022
-// author:                    Tastenkunst GmbH
-// license:                   Apache License 2.0
-
 // Call this function when your page is ready to handle wallet connections.
 // A wallet that loaded your page into an iframe will first send a connect/handshake to establish the dapp-connector bridge.
 // You can be sure that this will be the only wallet that connects at this time, and call enable() right away
@@ -86,8 +79,15 @@ function initCardanoDAppConnectorBridge(onBridgeCreated) {
 
       if(typeof value === 'string') {
 
-        apiObj[key]           = generateApiFunction(value)
-        _methodMap[value]     = value
+        if(key === 'feeAddress') {
+
+          apiObj[key]           = value
+
+        } else {
+
+          apiObj[key]           = generateApiFunction(value)
+          _methodMap[value]     = value
+        }
 
       } else if(typeof value === 'object') {
 

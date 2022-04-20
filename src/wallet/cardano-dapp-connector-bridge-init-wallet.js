@@ -1,10 +1,3 @@
-// cardano-dapp-connector-bridge
-//
-// verison:                   v1.0.0
-// date:                      19th April 2022
-// author:                    Tastenkunst GmbH
-// license:                   Apache License 2.0
-
 // This is an example how a wallet app could implement the connection.
 
 function initConnection(iframe, origin) {
