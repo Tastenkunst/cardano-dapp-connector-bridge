@@ -11,16 +11,22 @@ With CIP-0030, Cardano already has a dapp-connector specification. Reusing this 
 DApp includes cardano-dapp-connector-bridge.js and calls:
 
 ```js
+// Calling this function is mandatory.
 initCardanoDAppConnectorBridge(async (walletApi) => {
 
   // Bridge was established by the wallet.
-
+  // In this callback you can do, whatever is necessary to setup a good connection, eg.
+  
   if(walletApi.name === 'eternl') {
+    
+    // Here you can set any global flags, eg. 
+    // isIframeEmbedded = true
+    // addWalletFee = true
 
-    // Connect through the dapp-connector as you would normally do via your connect wallet button.
+    // You could also just connect through the dapp-connector as you would normally do via your connect wallet button.
     // eg.:
 
-    const fullApi = await walletApi.enable() // walletApi is window.cardano.eternl
+    // const fullApi = await walletApi.enable() // walletApi is window.cardano.eternl
   }
 })
 ```
@@ -41,8 +47,8 @@ var bridgeInitialApi          = {
     appVersion: {
 
       major:                  1,
-      minor:                  6,
-      patch:                  2
+      minor:                  7,
+      patch:                  0
     }
   },
 
