@@ -1,3 +1,6 @@
+// The following is just an example!
+// Take a look at this file for what is necessary: cardano-dapp-connector-bridge-init-minimal.js
+
 function addText(text) {
 
   var textnode                = document.createTextNode(text)
@@ -14,6 +17,10 @@ addText('DApp: waiting.')
 initCardanoDAppConnectorBridge(async (walletApi) => {
 
   // Bridge was established by the wallet.
+  // In this callback you can do, whatever is necessary to setup a good connection, eg.
+
+  // The following is just an example!
+  // Take a look at this file for what is necessary: cardano-dapp-connector-bridge-init-minimal.js
 
   addText('DApp: initCardanoDAppConnectorBridge: bridge initialized.')
 
