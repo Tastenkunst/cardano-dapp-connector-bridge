@@ -21,7 +21,8 @@ function initCardanoDAppConnectorBridge(onBridgeCreated) {
 
     connect:                  'connect',
     handshake:                'handshake',
-    enable:                   'enable'
+    enable:                   'enable',
+    isEnabled:                'isEnabled'
   }
 
   function generateUID() {
