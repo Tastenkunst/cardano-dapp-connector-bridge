@@ -27,6 +27,9 @@ initCardanoDAppConnectorBridge(async (walletApi) => {
     // eg.:
 
     // const fullApi = await walletApi.enable() // walletApi is window.cardano.eternl
+    
+    // Eternl fee address (mainnet/testnet), see EternlDAppBrowser.md for more info.
+    // const feeAddress = window.cardano.eternl.experimental.feeAddress // normal string, bech32 address.
   }
 })
 ```
