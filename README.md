@@ -86,25 +86,32 @@ The API objects will be automatically recreated on the dApp side using postMessa
 See cardano-dapp-connector-bridge-init-wallet.js for more hints on how to implement it.
 
 ### Response headers
-To be able to load a dApp page into an iframe, response headers must be configured correctly. This includes pages, images (CDNs) etc.
-(also remove X-Frame-Options, if present):
+There are two options available.
+
+1) Allow your page to be loaded in ANY web context (local, online, app, anywhere). This might be necessary to make third party services work correctly.
+2) Restrict your page to be loaded only on certain domains.
+
+Both options need to remove:
+```
+X-Frame-Options
+```
+
+For option 1 minimize response headers and remove any cross-origin or content-security-policy response headers.   
+
+For option 2, to be able to load a dApp page into an iframe, ALL response headers must be configured correctly. This includes pages, images (CDNs) etc.
 
 Add:
 ```
-content-security-policy: frame-ancestors https://staging.eternl.io/ https://eternl.io/ ionic: capacitor: chrome-extension: http://localhost:*/ https://localhost:*/;
+content-security-policy: frame-ancestors https://*.eternl.io/ https://eternl.io/ ionic: capacitor: chrome-extension: http://localhost:*/ https://localhost:*/;
 
 cross-origin-embedder-policy: require-corp
 cross-origin-opener-policy: same-origin
 cross-origin-resource-policy: cross-origin
 ```
-Remove:
-```
-X-Frame-Options
-```
 
 What frame-ancestors do?
 ```
-https://staging.eternl.io/ https://eternl.io/ -- page loadable on eternl pages.  
-ionic: capacitor: chrome-extension: -- page loadable in apps.  
-http://localhost:*/ https://localhost:*/ -- page loadable in development environments.  
+https://*.eternl.io/ https://eternl.io/ -- page can be embedded on eternl pages.  
+ionic: capacitor: chrome-extension: -- page can be embedded in apps.  
+http://localhost:*/ https://localhost:*/ -- page can be embedded in development environments.  
 ```
