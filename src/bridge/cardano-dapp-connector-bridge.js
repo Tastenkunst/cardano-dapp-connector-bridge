@@ -127,9 +127,10 @@ function initCardanoDAppConnectorBridge(onBridgeCreated) {
       isBridge:               true,
 
       // https://github.com/cardano-foundation/CIPs/tree/master/CIP-0030
-      isEnabled:              function() { return createRequest('isEnabled') },
-      enable:                 function() { return createRequest('enable') },
+      isEnabled:              function() { return createRequest('isEnabled', ...arguments) },
+      enable:                 function() { return createRequest('enable', ...arguments) },
 
+      supportedExtensions:    initialApi.supportedExtensions,
       apiVersion:             initialApi.apiVersion,
       name:                   initialApi.name,
       icon:                   initialApi.icon         ? initialApi.icon : null,
