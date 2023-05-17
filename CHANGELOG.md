@@ -1,5 +1,15 @@
 ## Changelog
 
+### v1.2.0 - 2023-05-17 (for Eternl 1.11.x ->)
+
+#### Added
+
+- supportedExtensions: Returns by Eternl supported extensions.
+
+#### Changed
+
+- enabled(): Now take additional Extension array according to latest CIP30 specification.
+
 ### v1.1.1 - 2022-05-07
 
 #### Fixed
